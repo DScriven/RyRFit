@@ -1,0 +1,34 @@
+<head>
+  <meta charset="utf-8">
+  <style>
+  body {
+    width: 500px;
+ 	margin: auto;
+    font-size: 12px;
+    font-family: Arial;
+  }
+</style>
+</head>
+<body>
+<h2 id="imagescale">Setting or changing the image scale</h2>
+<p>The image scale (nm/pixel) (obtained from the program that saved the images/image stack) is stored 
+in the file {fn_}tetramer.dat which does not exist if no previous analysis has been done on the data set.</p>
+<h3 id="newanalysis">Setting the image scale for a new image set</h3>
+<p>When analysing an image data set for the first time, no {fn_}tetramer.dat exists and the pixel size has to be 
+entered to enable the analysis to proceed. You can either:</p>
+<ol>
+<li>Enter the image scale (02.- 3.0 nm/pixel) in the box <b>before</b> you press the browse button:<br>
+<img src="imagescale.png">   
+</li>
+<li>If you do not, the program will ask for the image scale once the browse button is pressed</li>
+</ol>
+<h3 id="changeimagescale">Changing the image scale</h3>
+<p>You can change the image scale for an image that has been previously analysed in two ways:</p> 
+<ol>
+<li>(NOT recommended) Enter the image scale (02.- 3.0 nm/pixel) n the box <b>before</b> you press the browse button. 
+The system will ask you to confirm if the pixel size is different from that stored in {fn_}tetramer.dat.</li>
+<li><b>Preferred</b> - after 'Load & Display' is pressed F9 allows you to change the pixel size and immediately 
+see the effects. Any change you make will be saved in the {fn_}tetramer.dat file.</li>
+<ol> 
+</body>
+

@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/">
+        <file>boundaries.vert</file>
+        <file>tetramers.vert</file>
+        <file>colours.frag</file>
+        <file>planeimage.vert</file>
+        <file>planeimage.frag</file>
+        <file>open_small.bmp</file>
+        <file>RyRFit.ico</file>
+        <file>Error.wav</file>
+        <file>RyRFit.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,50 @@
+<head>
+  <meta charset="utf-8">
+  <style>
+  body {
+    width: 500px;
+ 	margin: auto;
+    font-size: 12px;
+    font-family: Arial;
+  }
+  </style>
+</head>
+<body>
+<h2 id="readfiles">Reading in the image files</h2>
+<p>There are two modes for reading in files:</p> 
+<ul><li>A single file containing multiple images - default</li>
+<li>Multiple images of single planes (Image stack)</li>
+</ul>
+<center><img src="Input_choice.png"></center>
+<p>After choosing the input mode you initiate the read by clicking on the open file/directory icon.</p> 
+<center><img src="browser_icon.jpg"></center>
+<p>This icon allows the image file/directory to be chosen. If this icon is
+pressed after an image has been loaded it will terminate the analysis and save the tetramer data 
+associated with that image and load whatever image is chosen next. This allows different images to be
+processed in the same instance of the program</p>
+<h3 id="multipleimages">Reading in a single multi-image dataset</h3>
+<p>In this case you use the browser icon to select a single image.</p>
+<center><img src="MultiStackImage_step2.png"></center>
+<p>On selection, the system searches for the file {fn_}tetramer.dat and reads it in if it is present.
+If there is no tetramer file it will ask you for the image scaling. Entering and modifying the scaling 
+is described <a href="./imagescale.html">here</a>.
+Display of the image and any previously loaded tetramers occurs when 'Load & Display" is pressed.</p>
+<h3 id="image stack">Reading in an image stack</h3> 
+Image stacks are assumed to consist of multiple images of approximately the same size which are 
+read in in numerical order.  For this reason it is only necessary to use the browse icon to 
+identify the directory which contains the files. It is assumed that this directory contains no TIFF images 
+other those in the image stack. In this case, {fn_} is set to NULL and the files saved are named tetramer.dat
+and nnd.dat
+</p>
+<center><img src="Input Stack directory.png"></center>
+<p>Selecting the directory name automatically lists the files to be read in, in numerical order,
+and reads in any existing {fn_}tetramer.dat file, as seen in the image below.</p>
+<center><img src="ImageStack_step2.png"></center>
+<p>If there is no tetramer file it will ask you for the image scaling if you haven't entered it
+previously. Entering and modifying the scaling is described <a href="./imagescale.html">here</a>.</p>
+<p>Pressing 'Load & display' will read in and display images and any previously saved tetramers. 
+Adding, modifying, deleting and classification of the tetramers is described <a href="./addmodify.html">here</a></p> 
+<p>NOTE: An image which was originally analysed as a multi-image file which is then displayed as a single multilayer imagetack
+may be inverted compared to the original multi-image file. If the saved tetramers do not coincide with the image use
+the F12 key to flip the image and bring them back into register</p>
+</body>    

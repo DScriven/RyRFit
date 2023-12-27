@@ -1,0 +1,58 @@
+<head>
+  <meta charset="utf-8">
+  <style>
+  body {
+    width: 500px;
+ 	margin: auto;
+    font-size: 12px;
+    font-family: Arial;
+  }
+  table, td, th {
+    border: 1px solid #ddd;
+  } 
+  table {
+    font: Arial;
+	font-size: 120%;
+    border-collapse: collapse;
+  } 	
+  tbody>tr>:nth-child(1){	
+     text-align:center;
+  }  
+</style>
+</head>
+<body>
+<h2 id="addmodify">Adding, modifying and classifying tetramers</h2>
+<h3 id="add">Adding a tetramer</h3>
+<p>Press the 'a' key and left click the mouse in the approximate position
+you want the tetramer to appear. The position of the tetramer can be moved
+one pixel at a time using the four arrow keys on the keyboard. The rotation
+is controlled by the mouse wheel. Once you are satisfied with the position
+press the 's' key to save the tetramer position</p>
+<h3 id="modify">Modifying a tetramer</h3>
+<p>First, identify the tetramer by pressing the 'm' key and left click on the desired tetramer, 
+which will change colour to white (black if you change the palette). To alter the position and 
+orientation of the tetramer use the four arrow keys and the mouse wheel. Press the 's' key once finished</p>
+<h3 id="delete">Delete a Tetramer</h3>
+<p>To delete a tetramer, use the 'm' key and left click to highlight it, then use the 'd' key and 
+it will be erased - Warning - this cannot be undone!</p>
+<h3 id="addmodifykeys">Valid Add/Modify keys</h3>
+<table style='width:100%'>
+<tr><td>Esc</td><td>Immediately stop addition or modification</td></tr>
+<tr><td>Arrow keys<br>(&larr;, &rarr;, &uarr; and &darr;)</td><td>Move the tetramer 1 pixel in that direction</td></tr>
+<tr><td>Mouse wheel</td><td>Rotate tetramer</td></tr>
+<tr><td>d</td><td>Delete the added tetramer</td></tr>
+<tr><td>s</td><td>Save tetramer after addition</td></tr>
+</table>
+<h3 id="classify">Classify a Tetramer</h3>
+<p>To classify a tetramer, press the 'c' key and left click on the desired tetramer to highlight it, 
+then use one of the following keys to classify it.</p>
+<table style='width: 80%'>
+<tr><td>Esc</td><td>Immediately stop classification</td></tr>
+<tr><td>b</td><td>'both'</td></tr>
+<tr><td>c</td><td>'checkerboard'</td></tr>
+<tr><td>i</td><td>'isolated'</td></tr>
+<tr><td>s</td><td>'side-by-side'</td></tr>
+<tr><td>u</td><td>'unclassified'</td></tr>
+</table>
+<p>Once the key is pressed the tetramer is classified</p>
+</body>
